@@ -1,0 +1,211 @@
+Question 1: What is a variable in C/C++?
+A variable is a named storage location in memory used to store data that can be changed during program execution.
+
+Question 2: Why do we use variables in programs?
+We use variables to store user inputs, keep track of data, and reuse values throughout our program.
+
+Question 3: What is the difference between a variable name and its value?
+Variable Name: It is the label used to identify the memory location (e.g., age).
+
+Variable Value: It is the actual data stored inside that location (e.g., 20).
+
+Question 4: Which of the following is a valid variable name? a) 2num b) total_marks c) for d) my marks
+b) total_marks is the only valid variable name.
+
+Question 5: Why is Age different from age?
+Because C++ is a case-sensitive language, so it treats uppercase and lowercase letters differently.
+
+Question 6: Can a variable name contain spaces? Why?
+No, a variable name cannot contain spaces because the compiler uses spaces to separate words and commands, which will cause a syntax error.
+
+Question 7: Can a variable name start with an underscore (_) ?
+Yes, a variable name can start with an underscore.
+
+Question 8: What happens if two variables have the same name in the same scope?
+The compiler will give a redefinition error (compile-time error) because it won't be able to identify which variable to use.
+
+Question 9: Write three meaningful variable names for storing student information.
+student_age
+
+roll_number
+
+total_marks
+
+Question 10: Which naming convention is better and why: studentMarks or sm?
+studentMarks is better because it is meaningful and easy to understand for anyone reading the code.
+
+Question 11: What is a data type?
+A data type tells the compiler what type of data a variable can store and how much memory it will take.
+
+Question 12: Which data type is used to store whole numbers?
+int data type.
+
+Question 13: Which data type is used to store decimal values?
+float or double data type.
+
+Question 14: What is the difference between float and double?
+float takes 4 bytes of memory and has less precision.
+
+double takes 8 bytes of memory and has double the precision of a float.
+
+Question 15: Which data type stores a single character?
+char data type.
+
+Question 16: Which data type stores True/False values?
+bool data type.
+
+Question 17: What data type is suitable for storing a person's name?
+string data type.
+
+Question 18: Predict the output: int age=18; cout<<age;
+Output: 18
+
+Question 19: Identify the data type: 25, 3.14, 'A', true.
+25 is int
+
+3.14 is double
+
+'A' is char
+
+true is bool
+
+Question 20: What happens if you store a decimal number in an int variable?
+The numbers after the decimal point are removed (truncated). For example, 5.7 becomes 5.
+
+Question 21: What is the purpose of cin?
+It is used to take input from the user (via keyboard).
+
+Question 22: What is the purpose of cout?
+It is used to display output on the screen.
+
+Question 23: Which symbol is used with cin?
+Extraction operator (>>).
+
+Question 24: Which symbol is used with cout?
+Insertion operator (<<).
+
+Question 25: Explain: cin >> age;
+It takes an input value from the user and stores it in the variable age.
+
+Question 26: Explain: cout << age;
+It prints the value stored in the variable age on the screen.
+
+Question 27: What is the purpose of endl?
+It is used to insert a new line and move the cursor to the next line.
+
+Question 28: Write a statement to input a student's marks.
+C++
+cin >> marks;
+Question 29: Write a statement to display 'Welcome to C++'.
+C++
+cout << "Welcome to C++";
+Question 30: Predict the output: cout << 'Programming';
+Output: It will give an error because single quotes are only used for a single character, not for whole words.
+
+Question 31: What is an operator?
+An operator is a symbol that tells the compiler to perform a specific mathematical or logical task.
+
+Question 32: Which operator is used for addition?
++ operator.
+
+Question 33: What is the result of 10 % 3?
+Result: 1 (because 10 divided by 3 leaves a remainder of 1).
+
+Question 34: What is the result of 8 % 2?
+Result: 0 (because 8 is completely divisible by 2).
+
+Question 35: Which operator checks equality?
+== operator.
+
+Question 36: What is the difference between = and == ?
+= is used to assign a value to a variable.
+
+== is used to compare if two values are equal.
+
+Question 37: What is the result of 5 > 3?
+Result: true (or 1).
+
+Question 38: What does && represent?
+Logical AND operator (returns true only if both conditions are true).
+
+Question 39: What does || represent?
+Logical OR operator (returns true if at least one condition is true).
+
+Question 40: What does ! represent?
+Logical NOT operator (reverses the result, makes true into false and vice versa).
+
+Question 41: Write a program to print 'Hello World'.
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Hello World";
+    return 0;
+}
+Question 42: Write a program to input two numbers and display their sum.
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, sum;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+    sum = a + b;
+    cout << "Sum is: " << sum;
+    return 0;
+}
+Question 43: Write a program to calculate the area of a rectangle.
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    int length, width, area;
+    cout << "Enter length and width: ";
+    cin >> length >> width;
+    area = length * width;
+    cout << "Area is: " << area;
+    return 0;
+}
+Question 44: What formula is used to calculate Simple Interest?
+Simple Interest = (Principal * Rate * Time) / 100
+
+Question 45: Write a program to calculate Simple Interest.
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    float p, r, t, si;
+    cout << "Enter Principal, Rate and Time: ";
+    cin >> p >> r >> t;
+    si = (p * r * t) / 100;
+    cout << "Simple Interest is: " << si;
+    return 0;
+}
+Question 46: Why is a temporary variable used while swapping two numbers?
+Because if we directly copy one variable to another, the old value will be overwritten and lost. A temporary variable holds the value safely during the swap.
+
+Question 47: Swap the values: a=10, b=20.
+C++
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a = 10, b = 20, temp;
+    temp = a;
+    a = b;
+    b = temp;
+    cout << "After swap: a = " << a << ", b = " << b;
+    return 0;
+}
+Question 48: What formula is used to convert Celsius into Fahrenheit?
+Fahrenheit = (Celsius * 9/5) + 32
+
+Question 49: What is the Fahrenheit value of 0°C?
+32°F
+
+Question 50: Why can integer division give incorrect results in the Celsius-to-Fahrenheit program?
+Because doing 9 / 5 using integers gives 1 instead of 1.8 in C++. It cuts off the decimal part, which makes the whole formula calculation wrong.
